@@ -1561,7 +1561,7 @@ def bot(op):
                 wait2['ROM'][msg.to] = {}
                 #print wait2
               
-            elif msg.text == ""view","View":
+            elif msg.text == "View":
                  if msg.from_ in admin:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
