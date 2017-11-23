@@ -611,7 +611,7 @@ def bot(op):
               if admin == []:
                   cl.sendText(msg.to,"The stafflist is empty")
               else:
-                  cl.sendText(msg.to,"Tunggu...")
+                  cl.sendText(msg.to,"Please wait...")
                   mc = "||zilentwish Bot||\n=====================\n"
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
@@ -1545,7 +1545,7 @@ def bot(op):
                     ki.sendText(msg.to,"Aktifkan jam terlebih dulu")
         #-------------Fungsi Jam Update Finish-------------------#
 
-            elif msg.text == "cek,Cek":
+            elif msg.text == "Cek":
               if msg.from_ in admin:
                 cl.sendText(msg.to, "Cek sider.....")
                 try:
@@ -1573,7 +1573,7 @@ def bot(op):
 
                         cl.sendText(msg.to, "Member is Online:%s\n\nMember is Siders:\n%s-===============-\n\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
-                        cl.sendText(msg.to, "First, Please Type command [Cek] \nand Type Command[view]\nThank You")
+                        cl.sendText(msg.to, "First, Please Type command [Cek] \nand Type Command[View]\nThank You")
 #-----------------------------------------------
 
 #-----------------------------------------------
@@ -1598,7 +1598,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         random.choice(KAC).updateGroup(G)
   
-            elif msg.text in ["join","Join"]:
+            elif msg.text in ["Go","go"]:
               if msg.from_ in owner:
                         G = satpam.getGroup(msg.to)
                         ginfo = satpam.getGroup(msg.to)
