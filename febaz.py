@@ -76,7 +76,6 @@ wait = {
     'message':"""Thank you for add me
 ≫ ZILENTWISH BOT PROTECT ≪
 
-
  Warm regard
   
  ZILENTWISH BOT PROTECT 
