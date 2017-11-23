@@ -323,7 +323,7 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("One Piece BOT")
+      print("zilentwish Bot Line Protector")
       print("mid -> " + prof.mid)
       print("name -> " + prof.displayName)
       print("authToken -> " + self.authToken)
