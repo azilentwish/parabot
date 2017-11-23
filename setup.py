@@ -1,10 +1,5 @@
 from __future__ import with_statement
 import re
-##
-# Setup.py Koplaxs ??
-# DON'T EDIT ??
-# Thanks ??
-##
 try:
     from setuptools import setup
 except ImportError:
@@ -18,10 +13,10 @@ setup(
         name='LINETCR',
         packages=['LINETCR'],
         version='0.9.9.9',
-        description='May Waifu be with you...',
+        description='To be with you',
         license='BSD License',
-        author='Koplaxs',
-        author_email='zxchidden@gmail.com',
+        author='aznonym',
+        author_email='',
         url='canseethefuture.org',
         keywords=['LINETCR'],
         classifiers=[
