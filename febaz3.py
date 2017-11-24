@@ -1712,19 +1712,19 @@ def bot(op):
                     except:
                         pass
             elif msg.text in ["x2 left"]:
-				if msg.from_ in admin:
-					if msg.toType == 2:
-						ginfo = cl.getGroup(msg.to)
-						try:
-							ki.leaveGroup(msg.to)
+	      if msg.from_ in admin:
+		if msg.toType == 2:
+		    ginfo = cl.getGroup(msg.to)
+		    try:
+			ki.leaveGroup(msg.to)
                     except:
                         pass
             elif msg.text in ["x3 left"]:
-				if msg.from_ in admin:
-					if msg.toType == 2:
-						ginfo = cl.getGroup(msg.to)
-						try:
-							kk.leaveGroup(msg.to)
+	      if msg.from_ in admin:
+		if msg.toType == 2:
+		    ginfo = cl.getGroup(msg.to)
+		    try:
+			kk.leaveGroup(msg.to)
                     except:
                         pass            
     #-------------Fungsi Leave Group Finish---------------#
