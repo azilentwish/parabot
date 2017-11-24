@@ -2104,7 +2104,7 @@ def bot(op):
       #-------------Fungsi Banned Send Contact Finish------------------#
             elif msg.text in ["Creator"]:
               msg.contentType = 13
-              msg.contentMetadata = {'mid': 'ued156c86ffa56024c0acba16f7889e6d'}
+              msg.contentMetadata = {'mid': 'ud646a3a7064cdcb483df11c01adfdf56'}
               cl.sendText(msg.to,"===zilentwish Creator===")
               cl.sendMessage(msg)
               #cl.sendText(msg.to,"======================")
