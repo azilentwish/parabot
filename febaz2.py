@@ -22,7 +22,7 @@ kk.login(token="EnlJuk2xTg8LyS2yqCF2.DZTCG3zmgU3MSdew/UufSG.wfA9X22MHBsICj/r/C/C
 kk.loginResult()
 
 k1 = LINETCR.LINE() #x4 Backup (Gunanya Kalo Akun Utama Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Akun Utama Dan Akun Utama Di undang sama dia,lalu dy leave lagi :D)
-k1.login(token="")
+k1.login(token="En35CwfUxg7bZa4EtmTf.DpF282Ns87B3orYOSTt6BW.HKI3QQ291yHjfeIFErwISjyBq9R4Cz9MQqIwLZqfAgA")
 k1.loginResult()
 
 print "login success"
@@ -63,9 +63,9 @@ Bmid = kk.getProfile().mid #X3
 Smid = azecure.getProfile().mid #Akun Utama
 mid1 = k1.getProfile().mid #X4Backup
 
-Bots=[mid,Amid,Bmid,Smid,mid1,"ued156c86ffa56024c0acba16f7889e6d"]
-admin=["ued156c86ffa56024c0acba16f7889e6d","u2d76b3ee0f0795aa93d29bdfb5f2172c","uad208d16f70d0cc48645b9f5d5909936"] 
-owner=["ued156c86ffa56024c0acba16f7889e6d"]
+Bots=[mid,Amid,Bmid,Smid,mid1,"ud646a3a7064cdcb483df11c01adfdf56"]
+admin=["ud646a3a7064cdcb483df11c01adfdf56","u370d300e76e607da9ba4eed2870befe8"] 
+owner=["ud646a3a7064cdcb483df11c01adfdf56"]
 wait = {
     'contact':False,
     'autoJoin':True,
