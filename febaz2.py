@@ -36,11 +36,11 @@ Setgroup ="""
  [Admin Menu]
 ==============
 •Protect QR
--- Qr on/off
+-- Qr On/Off
 •Protect Join
--- Join on/off
+-- Join On/Off
 •Mid Via Contact
--- Contact on/off
+-- Contact On/Off
 •Cancel Invited
 -- Cancel all
 ==============
@@ -1516,7 +1516,7 @@ def bot(op):
             elif msg.text in ["Jam off"]:
               if msg.from_ in admin:
                 if wait["clock"] == False:
-                    kk.sendText(msg.to,"Bot 3 jam off")
+                    kk.sendText(msg.to,"Bot 3 jam Off")
                 else:
                     wait["clock"] = False
                     kk.sendText(msg.to,"Clock is Off")
@@ -1536,7 +1536,7 @@ def bot(op):
             elif msg.text in ["Jam update"]:
                 if wait["clock"] == True:
                     now2 = datetime.now()
-                    nowT = datetime.strftime(now2,"(%H:%M)")
+                    nowT = datetime.strftime(now2,"(%H:%M:%S)")
                     profile = ki.getProfile()
                     profile.displayName = wait["cName4"] + nowT
                     ki.updateProfile(profile)
