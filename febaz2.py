@@ -6,23 +6,23 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 azecure = LINETCR.LINE() # azeez1.2 # Login Pake Akun Utama ( Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
-azecure.login(token="EnVBjqiZbJv3wYxXSa76.1KAJPWzm3lsd3XhagT+FvG.GZYQoet9jZ0Y3e3OzwFnof40zJByAIfG77O9PVaaxts=")
+azecure.login(qr=True)
 azecure.loginResult()
 
 cl = LINETCR.LINE() #x1
-cl.login(token="EnZr8KrXPIqP10g8weSa.KMu+wB1O/CwcCXXEWFTykG.0XBm57zriMiDClYpU0Zkpoq1yBJshujPukM0SzaIW2Q=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE() #x2
-ki.login(token="Enn33FxXHtvrmf9RyNR1.cSsJLerQeQq8ELgJnnDFCq.uIKoX5ncdAkR2DnHhgxLmx0QBognMuodZHWFACkj47Q=")
+ki.login(qr=True")
 ki.loginResult()
 
 kk = LINETCR.LINE() #x3
-kk.login(token="EnlJuk2xTg8LyS2yqCF2.DZTCG3zmgU3MSdew/UufSG.wfA9X22MHBsICj/r/C/CFHSUtoM2UQjpjbCXnPhdovU=")
+kk.login(qr=True)
 kk.loginResult()
 
 k1 = LINETCR.LINE() #x4 Backup (Gunanya Kalo Akun Utama Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Akun Utama Dan Akun Utama Di undang sama dia,lalu dy leave lagi :D)
-k1.login(token="En35CwfUxg7bZa4EtmTf.DpF282Ns87B3orYOSTt6BW.HKI3QQ291yHjfeIFErwISjyBq9R4Cz9MQqIwLZqfAgA")
+k1.login(qr=True)
 k1.loginResult()
 
 print "login success"
@@ -44,7 +44,7 @@ Setgroup ="""
 •Cancel Invited
 -- Cancel all
 ==============
-  zilentwish
+   zilentwish
 =============="""
 KAC=[cl,ki,kk]
 DEF1=[ki,kk] 
@@ -2074,7 +2074,7 @@ def bot(op):
                             
 
       #-------------Fungsi Balesan Respon Start---------------------#
-            elif msg.text in ["Ini Apa","ini apa","Apaan Ini","apaan ini,Ada apa,ada apa,"]:
+            elif msg.text in ["Ini Apa","ini apa","Apaan Ini","apaan ini","Ada apa","ada apa"]:
                 ki.sendText(msg.to,"Ya gitu deh intinya mah ,,,, aahhaaayyyy")
 
       #-------------Fungsi Balesan Respon Finish---------------------#
@@ -2108,7 +2108,7 @@ def bot(op):
               cl.sendText(msg.to,"===zilentwish Creator===")
               cl.sendMessage(msg)
               #cl.sendText(msg.to,"======================")
-              cl.sendText(msg.to,"Itu Creator Kami Yang Pea, Dudul ,Oneng, Pemalu, Pemahat, Pemaku, Penjahat, kudisan, Panuan, Kurapan, Buncit, Cacingan kribo, Hitam, Hidup lagi 😜")
+              cl.sendText(msg.to,"ntu Owner Kami Yang Pea, Dudul ,Oneng, Pemalu, Pemahat, Pemaku, Penjahat, kudisan, Panuan, Kurapan, Buncit, Cacingan kribo, Hitam, Hidup lagi 😜")
                 
       #-------------Fungsi Chat ----------------
             elif msg.text in ["bot","Bot"]:
