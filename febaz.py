@@ -63,9 +63,9 @@ Bmid = kk.getProfile().mid #X3
 Smid = satpam.getProfile().mid #Akun Utama
 mid1 = k1.getProfile().mid #X4Backup
 
-Bots=[mid,Amid,Bmid,Smid,mid1,"ued156c86ffa56024c0acba16f7889e6d"]
-admin=["ued156c86ffa56024c0acba16f7889e6d","u2d76b3ee0f0795aa93d29bdfb5f2172c","uad208d16f70d0cc48645b9f5d5909936"] 
-owner=["ued156c86ffa56024c0acba16f7889e6d"]
+Bots=[mid,Amid,Bmid,Smid,mid1,"ud646a3a7064cdcb483df11c01adfdf56"]
+admin=["ud646a3a7064cdcb483df11c01adfdf56"] 
+owner=["ud646a3a7064cdcb483df11c01adfdf56"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -2102,7 +2102,7 @@ def bot(op):
       #-------------Fungsi Banned Send Contact Finish------------------#
             elif msg.text in ["Creator"]:
               msg.contentType = 13
-              msg.contentMetadata = {'mid': 'ued156c86ffa56024c0acba16f7889e6d'}
+              msg.contentMetadata = {'mid': 'ud646a3a7064cdcb483df11c01adfdf56'}
               cl.sendText(msg.to,"======================")
               cl.sendMessage(msg)
               cl.sendText(msg.to,"======================")
