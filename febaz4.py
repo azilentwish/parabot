@@ -64,7 +64,7 @@ Smid = azecure.getProfile().mid #Akun Utama
 mid1 = k1.getProfile().mid #X4Backup
 
 Bots=[mid,Amid,Bmid,Smid,mid1,"ud646a3a7064cdcb483df11c01adfdf56"]
-admin=["ud646a3a7064cdcb483df11c01adfdf56","u370d300e76e607da9ba4eed2870befe8","u5c867b91afa94b934acc3ef4c567fcb4","ude02604ec5cb395174d2bad657deb8c0","ucf11ea078a2a331f879f0176803983a6"] 
+admin=["ud646a3a7064cdcb483df11c01adfdf56"] 
 owner=["ud646a3a7064cdcb483df11c01adfdf56"]
 wait = {
     'contact':False,
