@@ -1274,6 +1274,7 @@ def bot(op):
                 else:md+="[•]Auto Add [Off]\n"
                 if wait["commentOn"] == True: md+="[•]Comment [On]\n"
                 else:md+="[•]Comment [Off]\n*============*\n⭐zilentwish⭐\n*============*"
+		cl.sendText(msg.to,md)
             elif "album merit " in msg.text:
                 gid = msg.text.replace("album merit ","")
                 album = cl.getAlbum(gid)
@@ -1997,7 +1998,7 @@ def bot(op):
                  for i in gids:
                   #####gn = cl.getGroup(i).name
                   h += "•%s Member\n" % (cl.getGroup(i).name   +":"+ str(len(cl.getGroup(i).members)))
-                 cl.sendText(msg.to,"=======[List bot join Group]======\n"+ h +"Total Group :"+str(len(gids)))
+                 cl.sendText(msg.to,"=======[List bot join Group]======\n"+ h +"Total Group:"+ str(len(gids)))
 		
             elif msg.text in ["Lg2"]: #List Group + ID Group (Untuk InviteMeTo:)
               if msg.from_ in owner:
