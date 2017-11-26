@@ -560,7 +560,7 @@ def bot(op):
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
                 gs = ki.getGroup(msg.to)
-				gs = kk.getGroup(msg.to)                
+		gs = kk.getGroup(msg.to)                
                 gs = azecure.getGroup(msg.to)
                 targets = []
                 for g in gs.members:
