@@ -29,19 +29,19 @@ print "[Command]login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" [zilentwish Bot]
+helpMessage =""" •[zilentwish Bot]•
 OWNER: zilentwish"""
 
 Setgroup =""" 
  [Admin Menu]
 ==============
-•Protect QR
+•[Protect QR]
 -- Qr on/off
-•Protect Join
+•[Protect Join]
 -- Join on/off
-•Mid Via Contact
+•[Mid Via Contact]
 -- Contact on/off
-•Cancel Invited
+•[Cancel Invited]
 -- Cancel all
 ==============
   zilentwish
@@ -50,13 +50,13 @@ KAC=[cl,ki,kk]
 DEF1=[ki,kk] 
 DEF2=[cl,kk] 
 DEF3=[cl,ki] 
-DEF4=[cl,ki,kk] 
-DEF5=[cl,ki,kk] 
-DEF6=[cl,ki,kk] 
-DEF7=[cl,ki,kk] 
-DEF8=[cl,ki,kk] 
-DEF9=[cl,ki,kk] 
-DEF10=[cl,ki,kk] 
+#DEF4=[cl,ki,kk] 
+#DEF5=[cl,ki,kk] 
+#DEF6=[cl,ki,kk] 
+#DEF7=[cl,ki,kk] 
+#DEF8=[cl,ki,kk] 
+#DEF9=[cl,ki,kk] 
+#DEF10=[cl,ki,kk] 
 mid = cl.getProfile().mid #X1
 Amid = ki.getProfile().mid #X2
 Bmid = kk.getProfile().mid #X3
@@ -79,7 +79,7 @@ wait = {
  ===========
     BOT
  zilentwish  
-""",
+============""",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":False,
@@ -90,8 +90,8 @@ wait = {
     "cName":"",
     "cName2":"",
     "cName3":"",
-    "cName11":"",
-    "cName12":"",
+    "cName4":"",
+    "cName5":"zilentwish BOT",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -2298,12 +2298,12 @@ def nameUpdate():
                 profile3.displayName = wait["cName3"]
                 kk.updateProfile(profile3)
                 
-                profile11 = azecure.getProfile()
-                profile11.displayName = wait["cName11"]
+                profile4 = azecure.getProfile()
+                profile4.displayName = wait["cName4"]
                 azecure.updateProfile(profile11)
                 
-                profile12 = k1.getProfile()
-                profile12.displayName = wait["cName12"]
+                profile5 = k1.getProfile()
+                profile5.displayName = wait["cName5"]
                 k1.updateProfile(profile12)
             time.sleep(600)
         except:
