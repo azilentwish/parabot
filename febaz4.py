@@ -1255,7 +1255,7 @@ def bot(op):
                         cl.sendText(msg.to,"è¦�äº†å…³æ–­ã€‚")
              elif msg.text in ["Status","Set"]:
               if msg.from_ in admin:
-                md = "⭐Status Protection⭐\n*============*\n"
+                md = "⭐Status Proteksi⭐\n*============*\n"
                 if wait["Protectgr"] == True: md+="[•]Protect QR [On]\n"
                 else: md+="[•]Protect QR [Off]\n"
                 if wait["Protectcancl"] == True: md+="[•]Protect Invite [On]\n"
