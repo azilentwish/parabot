@@ -1998,8 +1998,8 @@ def bot(op):
                  for i in gids:
                   #####gn = cl.getGroup(i).name
                   h += "•%s Member\n" % (cl.getGroup(i).name   +":"+ str(len(cl.getGroup(i).members)))
-                 cl.sendText(msg.to,"=======[List bot join  Group]======\n"+ h + /n/n"Total Group :" + str(len(gids)))
-                
+                 cl.sendText(msg.to,"=======[List bot join Group]======\n"+ h +"Total Group :"+str(len(gids)))
+		
             elif msg.text in ["Lg2"]: #List Group + ID Group (Untuk InviteMeTo:)
               if msg.from_ in owner:
                 gid = cl.getGroupIdsJoined()
