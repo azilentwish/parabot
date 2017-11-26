@@ -1253,28 +1253,27 @@ def bot(op):
                         cl.sendText(msg.to,"Done")
                     else:
                         cl.sendText(msg.to,"è¦�äº†å…³æ–­ã€‚")
-            elif msg.text in ["Status","Set"]:
+             elif msg.text in ["Status","Set"]:
               if msg.from_ in admin:
-                md = "Status Protections\n===============\n"
-                if wait["Protectgr"] == True: md+="•Protect QR [On]\n"
-                else: md+="•Protect QR [Off]\n"
-                if wait["Protectcancl"] == True: md+="•Protect Invite [On]\n"
-                else: md+="•Protect Invite [Off]\n"
-                if wait["contact"] == True: md+="•Contact [On]\n"
-                else: md+="•Contact [Off]\n"
-                if wait["autoJoin"] == True: md+="•Auto Join [On]\n"
-                else: md +="•Auto Join [Off]\n"
-                if wait["autoCancel"]["On"] == True:md+="•Group Cancel " + str(wait["autoCancel"]["members"]) + "\n"
-                else: md+= "•Group Cancel [Off]\n"
-                if wait["leaveRoom"] == True: md+="•Auto Leave [On]\n"
+                md = "⭐Status Protection⭐\n*============*\n"
+                if wait["Protectgr"] == True: md+="[•]Protect QR [On]\n"
+                else: md+="[•]Protect QR [Off]\n"
+                if wait["Protectcancl"] == True: md+="[•]Protect Invite [On]\n"
+                else: md+="[•]Protect Invite [Off]\n"
+                if wait["contact"] == True: md+="[•]Contact [On]\n"
+                else: md+="[•]Contact [Off]\n"
+                if wait["autoJoin"] == True: md+="[•]Auto Join [On]\n"
+                else: md +="[•]Auto Join [Off]\n"
+                if wait["autoCancel"]["on"] == True:md+="[•]Group Cancel " + str(wait["autoCancel"]["members"]) + "\n"
+                else: md+= "[•]Group Cancel [Off]\n"
+                if wait["leaveRoom"] == True: md+="[•]Auto Leave [On]\n"
                 else: md+=" Auto Leave [Off]\n"
-                if wait["timeline"] == True: md+="•Share [On]\n"
-                else:md+="•Share [Off]\n"
-                if wait["autoAdd"] == True: md+="•Auto Add [On]\n"
-                else:md+="•Auto Add [Off]\n"
-                if wait["commentOn"] == True: md+="•Comment [On]\n"
-                else:md+="•Comment [Off]\n============\nzilentwish"
-                cl.sendText(msg.to,md)
+                if wait["timeline"] == True: md+="[•]Share [On]\n"
+                else:md+="[•]Share [Off]\n"
+                if wait["autoAdd"] == True: md+="[•]Auto Add [On]\n"
+                else:md+="[•]Auto Add [Off]\n"
+                if wait["commentOn"] == True: md+="[•]Comment [On]\n"
+                else:md+="[•]Comment [Off]\n*============*\n⭐zilentwish⭐\n*============*"
             elif "album merit " in msg.text:
                 gid = msg.text.replace("album merit ","")
                 album = cl.getAlbum(gid)
