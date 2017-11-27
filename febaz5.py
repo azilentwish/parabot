@@ -2007,7 +2007,7 @@ def bot(op):
                 gid = cl.getGroupIdsJoined()
                 h = ""
                 for i in gid:
-                    h += "[%s] + ":" + %s\n" % (cl.getGroup(i).name,i)
+                    h += "[%s]:%s\n" % (cl.getGroup(i).name,i)
                 cl.sendText(msg.to,h)
       #--------------List Group------------
        #------------ Keluar Dari Semua Group------
