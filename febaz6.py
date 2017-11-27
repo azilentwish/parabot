@@ -30,7 +30,8 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage =""" •[zilentwish Bot]•
- Coming soon"""
+ [No File]
+ [Coming soon]"""
 
 Setgroup =""" 
    [Admin Menu]
@@ -552,7 +553,7 @@ def bot(op):
                     if _nametarget == g.displayName:
                         targets.append(g.mid)
                 if targets == []:
-                   random.choice(KAC).sendText(msg.to,"Contact not found")
+                   random.choice(KAC).sendText(msg.to,("[server]Contact not found")
                 else:
                    for target in targets:
                         try:
@@ -1241,24 +1242,24 @@ def bot(op):
             elif msg.text in ["Set","Status"]:
               if msg.from_ in admin:
                 md = "Status Protections\n===============\n"
-                if wait["Protectgr"] == True: md+="•Protect QR [On]\n"
-                else: md+="•Protect QR [Off]\n"
-                if wait["Protectcancl"] == True: md+="•Protect Invite [On]\n"
-                else: md+="•Protect Invite [Off]\n"
-                if wait["contact"] == True: md+="•Contact [On]\n"
-                else: md+="•Contact [Off]\n"
-                if wait["autoJoin"] == True: md+="•Auto Join [On]\n"
-                else: md +="•Auto Join [Off]\n"
-                if wait["autoCancel"]["on"] == True:md+="•Group Cancel " + str(wait["autoCancel"]["members"]) + "\n"
-                else: md+= "•Group Cancel [Off]\n"
-                if wait["leaveRoom"] == True: md+="•Auto Leave [On]\n"
-                else: md+="•Auto Leave [Off]\n"
-                if wait["timeline"] == True: md+="•Share [On]\n"
-                else:md+="•Share [Off]\n"
-                if wait["autoAdd"] == True: md+="•Auto Add [On]\n"
-                else:md+="•Auto Add [Off]\n"
-                if wait["commentOn"] == True: md+="•Comment [On]\n"
-                else:md+="•Comment [Off]\n===================\n   zilentwish   Bot   \n==================="
+                if wait["Protectgr"] == True: md+="•Protect QR [ON]\n"
+                else: md+="•Protect QR [OFF]\n"
+                if wait["Protectcancl"] == True: md+="•Protect Invite [ON]\n"
+                else: md+="•Protect Invite [OFF]\n"
+                if wait["contact"] == True: md+="•Contact [ON]\n"
+                else: md+="•Contact [OFF]\n"
+                if wait["autoJoin"] == True: md+="•Auto Join [ON]\n"
+                else: md +="•Auto Join [OFF]\n"
+                if wait["autoCancel"]["ON"] == True:md+="•Group Cancel " + ["str(wait["autoCancel"]["members"])"] + "\n"
+                else: md+= "•Group Cancel [OFF]\n"
+                if wait["leaveRoom"] == True: md+="•Auto Leave [ON]\n"
+                else: md+="•Auto Leave [OFF]\n"
+                if wait["timeline"] == True: md+="•Share [ON]\n"
+                else:md+="•Share [OFF]\n"
+                if wait["autoAdd"] == True: md+="•Auto Add [ON]\n"
+                else:md+="•Auto Add [OFF]\n"
+                if wait["commentOn"] == True: md+="•Comment [ON]\n"
+                else:md+="•Comment [OFF]\n===================\n   zilentwish   Bot   \n==================="
                 cl.sendText(msg.to,md)
             elif "album merit " in msg.text:
                 gid = msg.text.replace("album merit ","")
