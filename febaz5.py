@@ -592,12 +592,12 @@ def bot(op):
                 cl.sendText(msg.to,"Access denied.")
                 cl.sendText(msg.to,"Admin permission required.")
                 
-            elif msg.text in ["Adminlist","adminlist"]:
+            elif msg.text in ["Admin ist"]:
               if admin == []:
                   cl.sendText(msg.to,"Admin list is empty")
               else:
                   cl.sendText(msg.to,"Please wait...")
-                  mc = "||zilentwish Bot||\n=====================\n"
+                  mc = "||zilentwish Bot Admin||\n=====================\n"
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
@@ -1764,7 +1764,7 @@ def bot(op):
                         return
                     for jj in matched_list:
                         try:
-                            klist=[cl,ki,kk,kc,ks,ka,kb,ku,ke,ko]
+                            klist=[cl,ki,kk]
                             kicker=random.choice(klist)
                             kicker.kickoutFromGroup(msg.to,[jj])
                             print (msg.to,[jj])
@@ -1856,7 +1856,7 @@ def bot(op):
                                     wait["blacklist"][target] = True
                                     f=codecs.open('st2__b.json','w','utf-8')
                                     json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                    random.choice(KAC).sendText(msg.to,"Succes Plak")
+                                    random.choice(KAC).sendText(msg.to,"Blcklist user Succes")
                                 except:
                                     random.choice(KAC).sendText(msg.to,"error")
             
