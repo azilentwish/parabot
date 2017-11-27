@@ -44,7 +44,7 @@ Setgroup ="""
 •Cancel Invited
 => Cancel all
 ===============
-  zilentwish BOT"""
+   zilentwish BOT"""
 KAC=[cl,ki,kk]
 DEF1=[ki,kk] 
 DEF2=[cl,kk] 
@@ -1240,7 +1240,7 @@ def bot(op):
                         cl.sendText(msg.to,"è¦�äº†å…³æ–­ã€‚")
             elif msg.text in ["Set","Status"]:
               if msg.from_ in admin:
-                md = "Status Protections\n================\n"
+                md = "Status Protections\n===============\n"
                 if wait["Protectgr"] == True: md+="•Protect QR [On]\n"
                 else: md+="•Protect QR [Off]\n"
                 if wait["Protectcancl"] == True: md+="•Protect Invite [On]\n"
@@ -1258,7 +1258,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="•Auto Add [On]\n"
                 else:md+="•Auto Add [Off]\n"
                 if wait["commentOn"] == True: md+="•Comment [On]\n"
-                else:md+="•Comment [Off]\n============\nzilentwish Bot\n============"
+                else:md+="•Comment [Off]\n===================\n   zilentwish   Bot   \n==================="
                 cl.sendText(msg.to,md)
             elif "album merit " in msg.text:
                 gid = msg.text.replace("album merit ","")
@@ -1541,7 +1541,7 @@ def bot(op):
                 now2 = datetime.now()
                 wait2['readPoint'][msg.to] = msg.id
                 wait2['readMember'][msg.to] = ""
-                wait2['setTime'][msg.to] = datetime.strftime(now2,"%D/%M/%Y-%H:%M:%S")
+                wait2['setTime'][msg.to] = datetime.strftime(now2,"%H:%M:%S")
                 wait2['ROM'][msg.to] = {}
                 #print wait2
               
@@ -1999,15 +1999,15 @@ def bot(op):
                  h = ""
                  for i in gids:
                   #####gn = cl.getGroup(i).name
-                  h += "•%s Member\n" % (cl.getGroup(i).name   +" : "+str(len(cl.getGroup(i).members)))
-                 cl.sendText(msg.to,"=======[List Group]======\n"+ h +"Total Group: "+str(len(gids)))
+                  h += "•%s Member\n" % (cl.getGroup(i).name   +": "+str(len(cl.getGroup(i).members)))
+                 cl.sendText(msg.to,"=======[List BOT in Group]======\n"+ h +"Total Group: "+str(len(gids)))
                 
             elif msg.text in ["Lg2"]: #Melihat List Group + ID Groupnya (Gunanya Untuk Perintah InviteMeTo:)
               if msg.from_ in owner:
                 gid = cl.getGroupIdsJoined()
                 h = ""
                 for i in gid:
-                    h += "[%s]:%s\n" % (cl.getGroup(i).name,i)
+                    h += "•%s:" "\n%s\n" % (cl.getGroup(i).name,i)
                 cl.sendText(msg.to,h)
       #--------------List Group------------
        #------------ Keluar Dari Semua Group------
