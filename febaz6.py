@@ -593,14 +593,14 @@ def bot(op):
                 cl.sendText(msg.to,"Access denied.")
                 cl.sendText(msg.to,"Admin permission required.")
                 
-            elif msg.text in ["Admin ist"]:
+            elif msg.text in ["Admin list"]:
               if admin == []:
                   cl.sendText(msg.to,"Admin list is empty")
               else:
                   cl.sendText(msg.to,"Please wait...")
                   mc = "||zilentwish Bot Admin||\n=====================\n"
                   for mi_d in admin:
-                      mc += "••>" +cl.getContact(mi_d).displayName + "\n"
+                      mc += "•" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
                   print "[Command]Admin list executed"
     #--------------------------------------
